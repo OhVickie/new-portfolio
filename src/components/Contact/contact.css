@@ -1,0 +1,64 @@
+#contactpage{
+    margin: 0 auto;
+    /* display: flex; */
+    text-align: center;
+    scroll-margin-top: 3rem; /*added this to allow the scrollIntoView method for the button in navbar.js go to the correct point when displaying tha contact page
+    Previously, it was cutting off the top of the header*/
+
+    /* This will cause the viewport to scroll to align the top border of the viewport with the top border of the element, 
+    but with 3rem of additional space. In other words, these properties of the element are taken into account:
+    padding-top
+    border-top
+    scroll-margin-top
+    (and not margin-top)
+    In addition, if the html element has scroll-padding-top set, then that is taken into account too. */
+}
+
+.contactpage_header{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+    
+}
+
+.contactpage_description {
+    margin-bottom: 5rem;
+}
+
+.contactForm {
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+
+.contactName, .contactEmail, .contactMessage {
+    border: none;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    background: rgba(34, 34, 34, 0.977);
+    width: 50vw;
+    max-width: 60rem;
+    font-size: 1rem;
+    color: white;
+    padding: .7rem 1.5rem;
+}
+
+
+.submitBtn {
+    border: none;
+    border-radius: 2rem;
+    background: white;
+    font-size: 1rem;
+    padding: .7rem 2.5rem;
+    margin-top: 2rem;
+}
+
+.submitBtn:hover {
+    transform: scale(1.02);
+    background: skyblue;
+}

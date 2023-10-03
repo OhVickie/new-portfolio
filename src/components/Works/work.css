@@ -1,0 +1,54 @@
+#worksection {
+    margin: 0 auto;
+        text-align: center;
+        min-height: calc(100vh-4rem);
+        width: 100vw;
+        max-width: 60rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+}
+
+.portfolioTitle {
+    margin: 3rem 0 1rem 0;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.portfolioDescription {
+    font-weight: 200;
+    margin: 1rem 0 5rem 0;
+    max-width: 45rem;
+}
+
+.portfolioImage-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 65rem;
+}
+
+.portfolioImage {
+    object-fit: cover;
+    height: 20rem;
+    margin: .5rem;
+}
+
+.portfolio-btn {
+    background: white;
+    border: none;
+    border-radius: 2rem;
+    padding: .7rem 2.5rem;
+    margin: 3rem;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:585px){
+    .portfolioImage {
+        height: 48vw;
+    }
+}
